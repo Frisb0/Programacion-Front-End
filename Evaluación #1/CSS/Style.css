@@ -1,0 +1,192 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cuerpo del sitio */
+body {
+    font-family: cursive, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    background-color: #121212;
+    background-image: url('..//CSS/bosque background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #e0e0e0; 
+    padding: 20px;
+}
+
+/* Encabezado */
+header {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Navegación */
+nav {
+    background-color: #4a7c59;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Contenido principal */
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+main h1, main h2, main h3 {
+    color:green;
+    margin-bottom: 10px;
+}
+
+main p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Enlaces en el contenido */
+main a {
+    display: block;
+    margin-bottom: 10px;
+    color: #4fc3f7;
+}
+
+main a:hover {
+    color: #81d4fa;
+    text-decoration: underline;
+}
+
+/* Pie de página */
+footer {
+    text-align: right;
+    margin-top: 40px;
+    padding: 15px 10px;
+    background-color: #4a7c59;
+    color: #aaaaaa;
+    border-radius: 10px;
+}
+
+ul {
+    padding-left: 10px;
+    list-style-type: none;
+    margin-bottom: 10px;
+    padding: 10px;  
+    text-align: justify
+}
+
+.titulo_detalles {
+    color:green;
+    text-align: center;
+}
+
+.bosques {
+    color: greenyellow;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.tundras {
+    color: lightseagreen;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.montañas {
+    color: lightcoral;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.tabla-habitat {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 0.95rem;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border: 1px solid #333;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  }
+  
+.tabla-habitat thead {
+    background-color:#4a7c59;
+  }
+  
+.tabla-habitat th, .tabla-habitat td {
+    padding: 12px 15px;
+    border: 1px solid #333;
+    text-align: left;
+  }
+  
+.tabla-habitat tr:nth-child(even) {
+    background-color: #252525;
+  }
+  
+.tabla-habitat tr:hover {
+    background-color: #333333;
+  }
+
+ol {
+    padding-left: 20px;
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+
+.imagen-detalle {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+.galeria img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+  
+.galeria a:hover img {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+
+.destacado {
+    font-weight: bold;
+    text-decoration: underline;
+    color: green;
+}
